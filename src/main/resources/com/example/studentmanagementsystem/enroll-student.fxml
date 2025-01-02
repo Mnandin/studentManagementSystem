@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagementsystem.CourseEnrollmentController"
+      spacing="20" alignment="CENTER">
+    <ComboBox fx:id="courseComboBox" promptText="Select Course" onAction="#loadStudents"/>
+
+    <VBox fx:id="studentsCheckBoxContainer" spacing="10" alignment="CENTER">
+        <!-- This VBox will hold the checkboxes dynamically -->
+    </VBox>
+
+    <Button text="Enroll Student" onAction="#enrollStudent"/>
+</VBox>

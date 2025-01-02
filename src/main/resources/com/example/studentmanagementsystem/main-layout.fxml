@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.studentmanagementsystem.MainController">
+    <top>
+        <MenuBar>
+            <Menu text="Student">
+                <MenuItem text="Add Student" onAction="#showAddStudentForm"/>
+                <MenuItem text="Update Student" onAction="#showUpdateStudentForm"/>
+                <MenuItem text="View Student Details" onAction="#showViewStudentDetails"/>
+            </Menu>
+            <Menu text="Courses">
+                <MenuItem text="Enroll Student" onAction="#showEnrollStudentForm"/>
+            </Menu>
+            <Menu text="Grades">
+                <MenuItem text="Assign Grade" onAction="#showAssignGradeForm"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox fx:id="contentArea" alignment="CENTER" spacing="20">
+            <Label text="Welcome to the Student Management System" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+        </VBox>
+    </center>
+</BorderPane>

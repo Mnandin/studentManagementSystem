@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.studentmanagementsystem.GradeManagementController"
+            prefHeight="400.0" prefWidth="600.0">
+    <ComboBox fx:id="studentComboBox" promptText="Select Student" onAction="#loadStudentCourses" layoutX="20" layoutY="20" />
+
+    <!-- TableView to show student's enrolled courses and their current grades -->
+    <TableView fx:id="coursesTableView" layoutX="20" layoutY="80" prefHeight="200" prefWidth="400">
+        <columns>
+            <TableColumn fx:id="courseNameColumn" text="Course Name" prefWidth="200"/>
+            <TableColumn fx:id="currentGradeColumn" text="Current Grade" prefWidth="200"/>
+        </columns>
+    </TableView>
+
+    <!-- Grade input TextField -->
+    <TextField fx:id="gradeInput" promptText="Enter Grade" layoutX="20" layoutY="300" />
+
+    <!-- Assign Grade Button -->
+    <Button fx:id="assignGradeButton" text="Assign Grade" layoutX="150" layoutY="300" onAction="#assignGrade"/>
+</VBox>
