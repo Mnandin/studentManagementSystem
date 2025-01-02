@@ -33,7 +33,7 @@ public class ViewStudentDetailsController {
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
 
-        // Assuming you want to display a list of courses the student is enrolled in
+        // Display a list of courses and the grades of the student enrolled
         coursesAndGradesColumn.setCellValueFactory(cellData -> {
                     // Get the student from the cell data
                     Student student = cellData.getValue();

@@ -7,13 +7,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.KeyEvent;
 import javafx.util.Pair;
-
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class GradeManagementController {
 

@@ -40,7 +40,6 @@ public class Student {
             System.out.println("The student already enrolled in this course");
         } else {
             enrolledCourses.put(course, null);
-            course.incrementEnrolledStudents();
         }
     }
 
@@ -50,17 +49,5 @@ public class Student {
         } else {
             System.out.println("The student is not enrolled in this course");
         }
-    }
-
-    public double calculateOverallGrade() {
-        double totalGrade = 0;
-        int count = 0;
-        for (Double grade : enrolledCourses.values()) {
-            if (grade != null) {
-                totalGrade += grade;
-                count++;
-            }
-        }
-        return count > 0 ? totalGrade / count : 0;
     }
 }
